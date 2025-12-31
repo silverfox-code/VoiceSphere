@@ -1,0 +1,172 @@
+ninja: Entering directory `/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/.cxx/Debug/684u5l6t/arm64-v8a'
+[0/2] Re-checking globbed directories...
+[1/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/Tools/FeatureFlags.cpp.o
+[2/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/Tools/ReanimatedVersion.cpp.o
+[3/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/NativeModules/ReanimatedModuleProxySpec.cpp.o
+[4/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/PropsDiffer.cpp.o
+FAILED: CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/PropsDiffer.cpp.o 
+/home/tiger/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/tiger/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dreanimated_EXPORTS -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/src/main/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/yoga -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactAndroid/src/main/jni/react/turbomodule -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/callinvoker -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/runtimeexecutor -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/jsiexecutor -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/react/renderer/graphics/platform/cxx -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-worklets/Common/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-worklets/android/src/main/cpp -isystem /home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include -isystem /home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/jsi/include -isystem /home/tiger/.gradle/caches/8.13/transforms/b166921f007a9429f8504499774f012c/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -DREACT_NATIVE_MINOR_VERSION=83    -DREANIMATED_VERSION=4.3.0-nightly-20251224-45cf72265    -DREANIMATED_FEATURE_FLAGS="[EXPERIMENTAL_CSS_ANIMATIONS_FOR_SVG_COMPONENTS:false][RUNTIME_TEST_FLAG:false][DISABLE_COMMIT_PAUSING_MECHANISM:false][ANDROID_SYNCHRONOUSLY_UPDATE_UI_PROPS:false][USE_SYNCHRONIZABLE_FOR_MUTABLES:false][FORCE_REACT_RENDER_FOR_SETTLED_ANIMATIONS:false][ENABLE_SHARED_ELEMENT_TRANSITIONS:false][IOS_SYNCHRONOUSLY_UPDATE_UI_PROPS:false][USE_COMMIT_HOOK_ONLY_FOR_REACT_COMMITS:true]" -fno-omit-frame-pointer -fstack-protector-all -fvisibility=hidden -fno-limit-debug-info  -fPIC -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -Wall -Werror -fexceptions -frtti -std=c++20 -DLOG_TAG=\"ReactNative\" -std=gnu++20 -MD -MT CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/PropsDiffer.cpp.o -MF CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/PropsDiffer.cpp.o.d -o CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/PropsDiffer.cpp.o -c /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/PropsDiffer.cpp
+In file included from /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/PropsDiffer.cpp:2:
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/react/renderer/core/graphicsConversions.h:71:14: error: no member named 'format' in namespace 'std'; did you mean 'folly::format'?
+      return std::format("{}%", dimension.value);
+             ^~~~~~~~~~~
+             folly::format
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/Format.h:291:1: note: 'folly::format' declared here
+format(StringPiece fmt, Args&&... args) {
+^
+In file included from /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/PropsDiffer.cpp:2:
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/react/renderer/core/graphicsConversions.h:71:14: error: no viable conversion from returned value of type 'Formatter<false, const float &>' to function return type 'folly::dynamic'
+      return std::format("{}%", dimension.value);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:238:18: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'const ObjectMaker &' for 1st argument
+  /* implicit */ dynamic(ObjectMaker const&) = delete;
+                 ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:289:3: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'const dynamic &' for 1st argument
+  dynamic(dynamic const&);
+  ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:290:3: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'dynamic &&' for 1st argument
+  dynamic(dynamic&&) noexcept;
+  ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:321:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'std::nullptr_t' for 1st argument
+inline dynamic::dynamic(std::nullptr_t) : type_(NULLT) {}
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:323:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'void (*)(EmptyArrayTag)' for 1st argument
+inline dynamic::dynamic(void (*)(EmptyArrayTag)) : type_(ARRAY) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:327:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'ObjectMaker (*)()' for 1st argument
+inline dynamic::dynamic(ObjectMaker (*)()) : type_(OBJECT) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:331:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'const char *' for 1st argument
+inline dynamic::dynamic(char const* s) : type_(STRING) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:335:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'std::string' (aka 'basic_string<char>') for 1st argument
+inline dynamic::dynamic(std::string s) : type_(STRING) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:344:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'ObjectMaker &&' for 1st argument
+inline dynamic::dynamic(ObjectMaker&& maker) : type_(OBJECT) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:376:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'std::vector<bool>::reference' (aka '__bit_reference<vector<bool, allocator<bool>>>') for 1st argument
+inline dynamic::dynamic(std::vector<bool>::reference b)
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:378:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'VectorBoolConstRefCtorType' (aka 'std::__bit_const_reference<std::vector<bool>>') for 1st argument
+inline dynamic::dynamic(VectorBoolConstRefCtorType b)
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:340:17: note: candidate template ignored: requirement 'is_detected_v<folly::dynamic_detail::detect_construct_string, folly::Formatter<false, const float &>>' was not satisfied [with Stringish = Formatter<false, const float &>]
+inline dynamic::dynamic(Stringish&& s) : type_(STRING) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:384:10: note: candidate template ignored: substitution failure [with T = Formatter<false, const float &>]: implicit instantiation of undefined template 'folly::dynamic::NumericTypeHelper<folly::Formatter<false, const float &>>'
+dynamic::dynamic(T t) {
+         ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:1115:12: note: explicit constructor is not a candidate
+  explicit dynamic(Array&& r);
+           ^
+2 errors generated.
+[5/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/RuntimeDecorators/UIRuntimeDecorator.cpp.o
+[6/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp.o
+FAILED: CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp.o 
+/home/tiger/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/tiger/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dreanimated_EXPORTS -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/src/main/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/yoga -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactAndroid/src/main/jni/react/turbomodule -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/callinvoker -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/runtimeexecutor -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/jsiexecutor -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/react/renderer/graphics/platform/cxx -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-worklets/Common/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-worklets/android/src/main/cpp -isystem /home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include -isystem /home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/jsi/include -isystem /home/tiger/.gradle/caches/8.13/transforms/b166921f007a9429f8504499774f012c/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -DREACT_NATIVE_MINOR_VERSION=83    -DREANIMATED_VERSION=4.3.0-nightly-20251224-45cf72265    -DREANIMATED_FEATURE_FLAGS="[EXPERIMENTAL_CSS_ANIMATIONS_FOR_SVG_COMPONENTS:false][RUNTIME_TEST_FLAG:false][DISABLE_COMMIT_PAUSING_MECHANISM:false][ANDROID_SYNCHRONOUSLY_UPDATE_UI_PROPS:false][USE_SYNCHRONIZABLE_FOR_MUTABLES:false][FORCE_REACT_RENDER_FOR_SETTLED_ANIMATIONS:false][ENABLE_SHARED_ELEMENT_TRANSITIONS:false][IOS_SYNCHRONOUSLY_UPDATE_UI_PROPS:false][USE_COMMIT_HOOK_ONLY_FOR_REACT_COMMITS:true]" -fno-omit-frame-pointer -fstack-protector-all -fvisibility=hidden -fno-limit-debug-info  -fPIC -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -Wall -Werror -fexceptions -frtti -std=c++20 -DLOG_TAG=\"ReactNative\" -std=gnu++20 -MD -MT CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp.o -MF CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp.o.d -o CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp.o -c /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:145:11: error: type constraint differs in template redeclaration
+template <ResolvableOp TOperation>
+          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.h:13:11: note: previous template declaration is here
+template <typename TOperation>
+          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:149:53: error: member initializer 'config_' does not name a non-static data member or base class
+    : StyleOperationInterpolator(defaultOperation), config_(std::move(config)) {}
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:151:11: error: type constraint differs in template redeclaration
+template <ResolvableOp TOperation>
+          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.h:13:11: note: previous template declaration is here
+template <typename TOperation>
+          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:161:54: error: use of undeclared identifier 'getResolvableValueContext'
+      fromOp.value.interpolate(progress, toOp.value, getResolvableValueContext(context)));
+                                                     ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:164:11: error: type constraint differs in template redeclaration
+template <ResolvableOp TOperation>
+          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.h:13:11: note: previous template declaration is here
+template <typename TOperation>
+          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:169:54: error: use of undeclared identifier 'getResolvableValueContext'
+  const auto &resolved = resolvableOp->value.resolve(getResolvableValueContext(context));
+                                                     ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:180:11: error: type constraint differs in template redeclaration
+template <ResolvableOp TOperation>
+          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.h:13:11: note: previous template declaration is here
+template <typename TOperation>
+          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:187:27: error: use of undeclared identifier 'config_'
+      .relativeProperty = config_.relativeProperty,
+                          ^
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/CSS/interpolation/transforms/TransformOperationInterpolator.cpp:188:21: error: use of undeclared identifier 'config_'
+      .relativeTo = config_.relativeTo};
+                    ^
+9 errors generated.
+[7/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/RuntimeDecorators/RNRuntimeDecorator.cpp.o
+[8/12] Building CXX object CMakeFiles/reanimated.dir/src/main/cpp/reanimated/android/OnLoad.cpp.o
+[9/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/LayoutAnimationsProxy_Experimental.cpp.o
+FAILED: CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/LayoutAnimationsProxy_Experimental.cpp.o 
+/home/tiger/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/tiger/Android/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DRN_SERIALIZABLE_STATE -Dreanimated_EXPORTS -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/src/main/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/yoga -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactAndroid/src/main/jni/react/turbomodule -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/callinvoker -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/runtimeexecutor -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/jsiexecutor -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/react/renderer/graphics/platform/cxx -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-worklets/Common/cpp -I/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-worklets/android/src/main/cpp -isystem /home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include -isystem /home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/jsi/include -isystem /home/tiger/.gradle/caches/8.13/transforms/b166921f007a9429f8504499774f012c/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -DREACT_NATIVE_MINOR_VERSION=83    -DREANIMATED_VERSION=4.3.0-nightly-20251224-45cf72265    -DREANIMATED_FEATURE_FLAGS="[EXPERIMENTAL_CSS_ANIMATIONS_FOR_SVG_COMPONENTS:false][RUNTIME_TEST_FLAG:false][DISABLE_COMMIT_PAUSING_MECHANISM:false][ANDROID_SYNCHRONOUSLY_UPDATE_UI_PROPS:false][USE_SYNCHRONIZABLE_FOR_MUTABLES:false][FORCE_REACT_RENDER_FOR_SETTLED_ANIMATIONS:false][ENABLE_SHARED_ELEMENT_TRANSITIONS:false][IOS_SYNCHRONOUSLY_UPDATE_UI_PROPS:false][USE_COMMIT_HOOK_ONLY_FOR_REACT_COMMITS:true]" -fno-omit-frame-pointer -fstack-protector-all -fvisibility=hidden -fno-limit-debug-info  -fPIC -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -Wall -Werror -fexceptions -frtti -std=c++20 -DLOG_TAG=\"ReactNative\" -std=gnu++20 -MD -MT CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/LayoutAnimationsProxy_Experimental.cpp.o -MF CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/LayoutAnimationsProxy_Experimental.cpp.o.d -o CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/LayoutAnimationsProxy_Experimental.cpp.o -c /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/LayoutAnimationsProxy_Experimental.cpp
+In file included from /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/LayoutAnimationsProxy_Experimental.cpp:6:
+In file included from /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp/reanimated/LayoutAnimations/PropsDiffer.h:3:
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/react/renderer/core/graphicsConversions.h:71:14: error: no member named 'format' in namespace 'std'; did you mean 'folly::format'?
+      return std::format("{}%", dimension.value);
+             ^~~~~~~~~~~
+             folly::format
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/Format.h:291:1: note: 'folly::format' declared here
+format(StringPiece fmt, Args&&... args) {
+^
+In file included from /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/LayoutAnimations/LayoutAnimationsProxy_Experimental.cpp:6:
+In file included from /home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/android/../Common/cpp/reanimated/LayoutAnimations/PropsDiffer.h:3:
+/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native/ReactCommon/react/renderer/core/graphicsConversions.h:71:14: error: no viable conversion from returned value of type 'Formatter<false, const float &>' to function return type 'folly::dynamic'
+      return std::format("{}%", dimension.value);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:238:18: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'const ObjectMaker &' for 1st argument
+  /* implicit */ dynamic(ObjectMaker const&) = delete;
+                 ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:289:3: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'const dynamic &' for 1st argument
+  dynamic(dynamic const&);
+  ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:290:3: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'dynamic &&' for 1st argument
+  dynamic(dynamic&&) noexcept;
+  ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:321:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'std::nullptr_t' for 1st argument
+inline dynamic::dynamic(std::nullptr_t) : type_(NULLT) {}
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:323:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'void (*)(EmptyArrayTag)' for 1st argument
+inline dynamic::dynamic(void (*)(EmptyArrayTag)) : type_(ARRAY) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:327:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'ObjectMaker (*)()' for 1st argument
+inline dynamic::dynamic(ObjectMaker (*)()) : type_(OBJECT) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:331:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'const char *' for 1st argument
+inline dynamic::dynamic(char const* s) : type_(STRING) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:335:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'std::string' (aka 'basic_string<char>') for 1st argument
+inline dynamic::dynamic(std::string s) : type_(STRING) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:344:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'ObjectMaker &&' for 1st argument
+inline dynamic::dynamic(ObjectMaker&& maker) : type_(OBJECT) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:376:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'std::vector<bool>::reference' (aka '__bit_reference<vector<bool, allocator<bool>>>') for 1st argument
+inline dynamic::dynamic(std::vector<bool>::reference b)
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:378:17: note: candidate constructor not viable: no known conversion from 'Formatter<false, const float &>' to 'VectorBoolConstRefCtorType' (aka 'std::__bit_const_reference<std::vector<bool>>') for 1st argument
+inline dynamic::dynamic(VectorBoolConstRefCtorType b)
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:340:17: note: candidate template ignored: requirement 'is_detected_v<folly::dynamic_detail::detect_construct_string, folly::Formatter<false, const float &>>' was not satisfied [with Stringish = Formatter<false, const float &>]
+inline dynamic::dynamic(Stringish&& s) : type_(STRING) {
+                ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic-inl.h:384:10: note: candidate template ignored: substitution failure [with T = Formatter<false, const float &>]: implicit instantiation of undefined template 'folly::dynamic::NumericTypeHelper<folly::Formatter<false, const float &>>'
+dynamic::dynamic(T t) {
+         ^
+/home/tiger/.gradle/caches/8.13/transforms/ecba8e2f1f0586eb7273fdaec2e76340/transformed/react-android-0.83.0-debug/prefab/modules/reactnative/include/folly/json/dynamic.h:1115:12: note: explicit constructor is not a candidate
+  explicit dynamic(Array&& r);
+           ^
+2 errors generated.
+[10/12] Building CXX object CMakeFiles/reanimated.dir/src/main/cpp/reanimated/android/NativeProxy.cpp.o
+[11/12] Building CXX object CMakeFiles/reanimated.dir/home/tiger/projects/wakie-app/VoiceSphere/node_modules/react-native-reanimated/Common/cpp/reanimated/NativeModules/ReanimatedModuleProxy.cpp.o
+ninja: build stopped: subcommand failed.

@@ -101,7 +101,38 @@ yarn-error.log*
 *.swo
 *~
 
+# Ruby / Bundler
+.bundle/
+vendor/bundle/
+Gemfile.lock
+
+# Build output logs
+build_output.txt
+build_output*.txt
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing / Coverage
+coverage/
+.jest/
+
 # Misc
 .cache/
 .temp/
 .tmp/
+*.bak
+*.backup
+
+# Generated type declarations (NativeWind)
+# nativewind-env.d.ts
+
+# Empty directories (placeholders)
+empty/
+
+# Sentry
+.sentryclirc
+
+# Temporary files
+*.orig
+*.patch
