@@ -1,4 +1,36 @@
 module.exports = {
-  presets: ['module:@react-native/babel-preset', 'nativewind/babel'],
-  plugins: ['react-native-reanimated/plugin'],
+  presets: ['module:@react-native/babel-preset'],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['./'],
+        alias: {
+          '@screens': './src/screens',
+          '@components': './src/components',
+          '@api': './src/api',
+          '@utils': './src/utils',
+          '@interfaces': './src/interfaces',
+          '@appConstants': './src/appConstants',
+          '@assets': './src/assets',
+          '@storage': './src/storage',
+          '@services': './src/services',
+          '@customhooks': './src/customhooks',
+          '@core': './src/core',
+          '@env': './src/env',
+          '@socket': './src/socket',
+          '@webview': './src/webview',
+          '@context': './src/context',
+          '@commonTypes': './commons/@commonTypes',
+          '@constants': './commons/@constants',
+          '@database': './commons/@database',
+          '@logger': './commons/@logger',
+          '@stores': './commons/@stores',
+          '@analytics': './analytics',
+          '@theme': './src/theme',
+        },
+      },
+    ],
+    'react-native-reanimated/plugin',
+  ],
 };

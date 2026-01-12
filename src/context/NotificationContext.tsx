@@ -1,5 +1,5 @@
+import { webSocketService } from '@socket/WebSocketService';
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { webSocketService } from '../services/WebSocketService';
 
 export interface Notification {
     id: string;
@@ -24,26 +24,30 @@ export const NotificationProvider: React.FC<{ children: React.ReactNode }> = ({ 
     const [notifications, setNotifications] = useState<Notification[]>([]);
 
     useEffect(() => {
-        const unsubscribe = webSocketService.addListener((msg) => {
-            if (msg.event_type === 'NEW_COMMENT') {
-                const comment = msg.data;
-                const newNotification: Notification = {
-                    id: Date.now().toString(), // Simple ID generation
-                    type: 'NEW_COMMENT',
-                    title: 'New Comment',
-                    message: `Someone commented: ${comment.content}`,
-                    data: comment,
-                    read: false,
-                    timestamp: new Date(),
-                };
-                setNotifications(prev => [newNotification, ...prev]);
-            } else if (msg.event_type === 'REACTION_UPDATE') {
-                // Handle reaction notifications if needed
-            }
+        // Subscribe to new comment events
+        const unsubscribeComment = webSocketService.on('NEW_COMMENT', (msg: any) => {
+            const comment = msg.data || msg;
+            const newNotification: Notification = {
+                id: Date.now().toString(),
+                type: 'NEW_COMMENT',
+                title: 'New Comment',
+                message: `Someone commented: ${comment.content || comment.message || 'New comment'}`,
+                data: comment,
+                read: false,
+                timestamp: new Date(),
+            };
+            setNotifications(prev => [newNotification, ...prev]);
+        });
+
+        // Subscribe to reaction update events  
+        const unsubscribeReaction = webSocketService.on('REACTION_UPDATE', (msg: any) => {
+            // Handle reaction notifications if needed
+            console.log('Reaction update:', msg);
         });
 
         return () => {
-            unsubscribe();
+            unsubscribeComment();
+            unsubscribeReaction();
         };
     }, []);
 

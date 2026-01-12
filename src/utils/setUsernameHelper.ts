@@ -19,9 +19,10 @@
  * clearUsername();
  */
 
-import { setUsername, clearUsername, getCurrentUsername } from './src/utils/auth';
 
-// Export for easy access
+import { setUsername, clearUsername, getCurrentUsername } from './auth';
+
+// // Export for easy access
 export { setUsername, clearUsername, getCurrentUsername };
 
 // Helper function to set username from app (can be called from a dev menu)

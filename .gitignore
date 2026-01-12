@@ -56,6 +56,9 @@ android/local.properties
 *.keystore
 !debug.keystore
 
+# Google Services - Contains sensitive API keys
+android/app/google-services.json
+
 # Buck
 .buckd/
 buck-out/

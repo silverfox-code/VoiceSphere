@@ -81,7 +81,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-    }
+        
+        // Google Sign-In Web Client ID - Replace with YOUR Web Client ID
+buildConfigField "String", "WEB_CLIENT_ID", "\"980496258344-sdp58an6sb6hj6fn5bvi5ett2p3ulluh.apps.googleusercontent.com\""    }
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
@@ -116,3 +118,6 @@ dependencies {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+
+// Google Services for Google Sign-In
+apply plugin: 'com.google.gms.google-services'

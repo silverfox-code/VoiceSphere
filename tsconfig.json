@@ -3,7 +3,94 @@
   "compilerOptions": {
     "types": [
       "jest"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@screens/*": [
+        "src/screens/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@api/*": [
+        "src/api/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@interfaces/*": [
+        "src/interfaces/*"
+      ],
+      "@appConstants/*": [
+        "src/appConstants/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@storage/*": [
+        "src/storage/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@customhooks/*": [
+        "src/customhooks/*"
+      ],
+      "@core/*": [
+        "src/core/*"
+      ],
+      "@env/*": [
+        "src/env/*"
+      ],
+      "@socket/*": [
+        "src/socket/*"
+      ],
+      "@webview/*": [
+        "src/webview/*"
+      ],
+      "@context/*": [
+        "src/context/*"
+      ],
+      "@commonTypes": [
+        "commons/@commonTypes/index.ts"
+      ],
+      "@commonTypes/*": [
+        "commons/@commonTypes/*"
+      ],
+      "@constants": [
+        "commons/@constants/index.ts"
+      ],
+      "@constants/*": [
+        "commons/@constants/*"
+      ],
+      "@database": [
+        "commons/@database"
+      ],
+      "@database/*": [
+        "commons/@database/*"
+      ],
+      "@logger": [
+        "commons/@logger/index.ts"
+      ],
+      "@logger/*": [
+        "commons/@logger/*"
+      ],
+      "@stores": [
+        "commons/@stores/index.ts"
+      ],
+      "@stores/*": [
+        "commons/@stores/*"
+      ],
+      "@analytics/*": [
+        "analytics/*"
+      ],
+      "@theme": [
+        "src/theme/index.ts"
+      ],
+      "@theme/*": [
+        "src/theme/*"
+      ]
+    }
   },
   "include": [
     "**/*.ts",
